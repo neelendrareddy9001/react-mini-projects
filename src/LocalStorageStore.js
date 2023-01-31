@@ -1,4 +1,4 @@
-import createStore from "react-persist-store/dist/persist-store";
+import createStore from "react-persist-store"
 
 const initialState = {
     user : {
@@ -9,7 +9,7 @@ const initialState = {
     }
 };
 
-const store = createStore(initialState);
+const store = createStore(initialState, {storage : 'session', namespace : 'test'});
 
 export const login = store("login");
 export const user = store("user");
