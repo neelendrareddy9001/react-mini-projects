@@ -9,7 +9,22 @@ function App() {
     <div className="App">
        {/* <Hello/> */}
        {/*<CounterUpPage/> */}
-        <A/>
+       {/*  <A/> */}
+
+
+
+
+        {content.map(content => {
+        <Product
+            key={content.id}
+            image = {content.image}
+            name = {content.name}
+            price = {content.price}
+            totalSales = {content.totalSales}
+            timeLeft = {content.timeLeft}
+            rating = {content.rating}
+        />
+       })}
     </div>
   );
 }
