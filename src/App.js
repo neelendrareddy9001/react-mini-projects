@@ -1,7 +1,6 @@
 import Hello from './Hello';
 import CounterUpPage from './CounterUp/CounterUpPage';
 import './App.css';
-import './App.scss';
 import A from './A'
 
 //localStorage
@@ -12,6 +11,10 @@ import Local from './BookLIstWithLocalStorage/Local'
 import Product from './ProductCard/Product'
 import content from './ProductCard/content'
 
+//Todo
+import Todo from './Todo/Todo'
+
+
 function App() {
   return (
     <div className="App">
@@ -19,7 +22,7 @@ function App() {
        {/*<CounterUpPage/> */}
        {/*  <A/> */}
 
-
+       <Todo/>
 
 
         {content.map(content => {
